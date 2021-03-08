@@ -1,11 +1,11 @@
 module.exports = {
   parserOptions: {
     parser: 'babel-eslint',
-    sourceType: 'module'
+    sourceType: 'module',
   },
   env: {
     browser: true,
-    es6: true
+    es6: true,
   },
   extends: ['prettier', 'plugin:vue/recommended'],
   plugins: ['prettier', 'vue'],
@@ -15,9 +15,7 @@ module.exports = {
       {
         bracketSpacing: true,
         singleQuote: true,
-        trailingComma: 'none',
-        arrowParens: 'avoid'
-      }
-    ]
-  }
+      },
+    ],
+  },
 };

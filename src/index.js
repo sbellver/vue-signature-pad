@@ -1,4 +1,4 @@
-import VueSignaturePad from './components/VueSignaturePad.vue';
+import VueSignaturePad from './components/VueSignaturePad';
 
 function install(Vue) {
   if (install.installed) {
@@ -10,7 +10,7 @@ function install(Vue) {
 }
 
 const plugin = {
-  install
+  install,
 };
 
 let GlobalVue = null;
