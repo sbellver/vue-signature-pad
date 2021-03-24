@@ -1,6 +1,7 @@
 <script>
 import SignaturePad from 'signature_pad';
 import mergeImages from 'merge-images';
+import { h } from 'vue'; 
 import {
   DEFAULT_OPTIONS,
   TRANSPARENT_PNG,
@@ -171,10 +172,10 @@ export default {
       return this.signaturePad.clear();
     }
   },
-  render(createElement) {
+  render() {
     const { width, height, customStyle } = this;
 
-    return createElement(
+    return h(
       'div',
       {
         style: {
@@ -184,7 +185,7 @@ export default {
         }
       },
       [
-        createElement('canvas', {
+        h('canvas', {
           style: {
             width: '100%',
             height: '100%'
